@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "NotePaste",
   "version": "1.0",
-  "description": "Write quick notes over an image when copy-pasting",
+  "description": "Annotates text over images and adds to clipboard",
 
   "icons": {
     "48": "icons/icon.svg"

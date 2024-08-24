@@ -2,7 +2,7 @@ import { annotateImage } from './imghandler.js'
 
 browser.contextMenus.create({
   id: "note",
-  title: "Copy with note",
+  title: "Annotate image",
   contexts: ["image"]
 });
 
