@@ -9,7 +9,8 @@
   },
 
   "background": {
-    "scripts": ["note.js"]
+    "scripts": ["background.js"],
+    "type": "module"
   },
 
   "permissions": ["notifications", "contextMenus", "clipboardWrite", "clipboardRead"],
