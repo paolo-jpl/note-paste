@@ -1,4 +1,4 @@
-import { createImageWithNote } from './imghandler.js'
+import { annotateImage } from './imghandler.js'
 
 browser.contextMenus.create({
   id: "note",
@@ -8,7 +8,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.onClicked.addListener(async function (info, tab) {
   if (info.menuItemId == "note") {
-    createImageWithNote(info.srcUrl);
+    annotateImage(info.srcUrl);
   }
 });
 

@@ -1,6 +1,6 @@
 import { notif } from "./background.js";
 
-export async function createImageWithNote(imgUrl) {
+export async function annotateImage(imgUrl) {
   try {
     const data = await fetch(imgUrl);
     const blob = await data.blob();
