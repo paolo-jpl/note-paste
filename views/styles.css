@@ -1,0 +1,9 @@
+body{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+input{
+  display: block;
+}

@@ -23,7 +23,20 @@ function createImage(imgBlob) {
     context.drawImage(e.target, 0, 0, e.target.width, e.target.height);
     writeText(context, null, null);
     canvas.toBlob(copyToClipboard, "image/png", 1);
-  };      
+  };
+}
+
+function openPopup(){
+  const popupURL = browser.extension.getURL("views/inputs.html");
+
+  browser.windows.create({
+    url: popupURL,
+    left: 1500, //TODO: make left and top dynamic
+    top: 100,
+    width: 400,
+    height: 600,
+    type: 'popup'
+  })
 }
 
 function writeText(context, options, text){
